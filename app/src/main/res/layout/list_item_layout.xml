@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/ivIconoApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tvNombreApp"
+            style="@style/App_TextViewMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/ivIconoApp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvNombreApp"
+            android:layout_below="@+id/tvNombreApp"
+            android:layout_marginTop="2dp"
+            android:textStyle="bold"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvLabelCategoria"
+            style="@style/App_TextViewAppColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvPrecio"
+            android:layout_below="@+id/tvPrecio"
+            android:layout_marginTop="2dp"
+            android:text="@string/categoria" />
+
+        <TextView
+            android:id="@+id/tvCategoriaApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            style="@style/App_TextViewAccent"
+            android:layout_alignBaseline="@+id/tvLabelCategoria"
+            android:layout_alignBottom="@+id/tvLabelCategoria"
+            android:layout_toRightOf="@+id/tvLabelCategoria"
+            android:layout_marginLeft="5dp"/>
+
+        <at.blogc.android.views.ExpandableTextView
+            android:id="@+id/tvResumenApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvLabelCategoria"
+            android:layout_below="@+id/tvLabelCategoria"
+            android:layout_marginTop="11dp"
+            android:text=""
+            android:maxLines="5"
+            android:ellipsize="end"
+            app:animation_duration="100"/>
+
+        <TextView
+            android:id="@+id/tvExpandableAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvResumenApp"
+            android:text="@string/ver_mas" />
+    </RelativeLayout>
+
+</LinearLayout>

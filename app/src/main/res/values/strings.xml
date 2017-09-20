@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App Explorer</string>
+    <string name="action_settings">Settings</string>
+    <string name="categoria">Categoría</string>
+    <string name="ver_mas">Ver mas</string>
+    <string name="ver_menos">Ver menos</string>
+    <string name="buscar">Buscar</string>
+    <string name="cargando">Cargando...</string>
+</resources>
